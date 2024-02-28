@@ -1,0 +1,145 @@
+* {
+  font-family: "Slabo 27px", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: black;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  margin-left: 30px;
+  font-size: 26px;
+}
+
+nav h1 {
+  font-size: 40px;
+  color: rgba(250, 10, 10, 0.801);
+  border-bottom: 5px solid rgba(250, 10, 10, 0.801);
+  border-radius: 40px;
+}
+
+ul {
+  display: flex;
+}
+
+ul li {
+  list-style: none;
+  margin-inline: 30px;
+  text-decoration: none;
+}
+
+ul li:hover {
+  cursor: pointer;
+}
+
+.btn button {
+  width: 100px;
+  height: 36px;
+  border: 3px solid rgba(250, 10, 10, 0.801);
+  background-color: black;
+  border-style: none;
+  color: white;
+  font-size: 25px;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+/* create an animation of underline when we hover over button inside btn class */
+.btn button:hover {
+  border: 3px solid black;
+  background-color: rgba(250, 10, 10, 0.801);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btn button {
+  cursor: pointer;
+}
+
+.main-div {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  margin-top: 20px;
+}
+
+.main-div .head {
+  font-size: 50px;
+
+  margin-left: 40px;
+}
+
+.head button {
+  width: 170px;
+  height: 45px;
+  background-color: rgba(250, 10, 10, 0.801);
+  color: white;
+  font-size: 17px;
+  border-radius: 20px;
+}
+
+.head button:hover {
+  background-color: black;
+  border: 3px solid rgba(250, 10, 10, 0.801);
+  cursor: pointer;
+}
+.head button {
+  transition: 0.5s;
+}
+
+@keyframes turnRed {
+  0% {
+    background-color: rgba(250, 10, 10, 0.801);
+  }
+  100% {
+    background-color: black;
+  }
+}
+
+.head button:active {
+  animation: turnRed 0.5s;
+}
+
+.img img {
+  margin-right: 40px;
+  margin-top: 71px;
+  width: 513px;
+}
+
+.main-div .head form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-div .head form input {
+  width: 300px;
+  height: 40px;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 18px;
+  border: 2px solid rgba(250, 10, 10, 0.801);
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+}
+
+.main-div .head form button {
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  border: none;
+  border-radius: 25px;
+  background-color: rgba(250, 10, 10, 0.801);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.main-div .head form button:hover {
+  background-color: black;
+}
